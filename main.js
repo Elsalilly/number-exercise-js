@@ -37,3 +37,17 @@ console.log("Congrats you win!");
     console.log(`Target: ${target}, Guess ${guess}`);
     console.log("Congrats you win!");
 */
+
+function generateRandomArray() {
+
+    for(let i = 0; i <= 20; i++) {
+        let score = Math.floor(Math.random() * 100 +1);
+        if (i == 20) {
+            break;
+        } else {
+        console.log(score);
+        }
+    }
+}
+
+console.log(generateRandomArray());
