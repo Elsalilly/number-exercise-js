@@ -18,14 +18,49 @@ function guessNumberGame() {
         }
     
     }
-
+    return guess;
 }
-
-console.log(guessNumberGame());
+const rightAnswer = guessNumberGame ();
 console.log("Congrats you win!");
 */
 
-/*
+
+/* Excerise 2 
+function generateRandomArray() {
+    const arrayRan = [];
+    for(let i = 0; i <= 20; i++) {
+        let score = Math.floor(Math.random() * 100) +1;
+    
+        arrayRan[i] = score;
+        }
+    return arrayRan;    
+}
+
+const array = generateRandomArray();
+console.log(array);
+
+*/
+
+/* Excerise 3 Not done */
+function generateRandomArray() {
+    const arrayRan = [];
+    for(let i = 2; i <= 20; i+=2) {
+        let score = Math.floor(Math.random() * 100) +1;
+    
+        arrayRan[i] = score;
+        }
+    return arrayRan;    
+}
+
+const array = generateRandomArray();
+console.log(array);
+
+
+
+
+/* Extra */
+
+/* Excercise 1
     const target = Math.floor(Math.random() * 10 +1);
     let guess = null;
 
@@ -38,10 +73,21 @@ console.log("Congrats you win!");
     console.log("Congrats you win!");
 */
 
+/* Excerise 2
 function generateRandomArray() {
+    let array = [];
+    let length = array.length;
+    for(let i = 0; i < 40; i++) {
+        array.push(Math.floor(Math.random() * 100) +1);
+    }
+}
+console.log(generateRandomArray());
 
-    for(let i = 0; i <= 20; i++) {
-        let score = Math.floor(Math.random() * 100 +1);
+
+function generateRandomArray(sum) {
+
+    for(let i = 2; i <= 20; i+=2) {
+        let score = Math.floor(Math.random() * 20 / 2 +1) *2;
         if (i == 20) {
             break;
         } else {
@@ -51,3 +97,4 @@ function generateRandomArray() {
 }
 
 console.log(generateRandomArray());
+*/
