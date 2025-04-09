@@ -25,10 +25,11 @@ console.log("Congrats you win!");
 */
 
 
-/* Excerise 2 
-function generateRandomArray() {
+/* Excerise 2 */
+function generateRandomArray(length) {
     const arrayRan = [];
-    for(let i = 0; i <= 20; i++) {
+
+    for(let i = 0; i < length; i++) {
         let score = Math.floor(Math.random() * 100) +1;
     
         arrayRan[i] = score;
@@ -36,26 +37,39 @@ function generateRandomArray() {
     return arrayRan;    
 }
 
+const array = generateRandomArray(10);
+console.log(array);
+
+
+
+/* Excerise 3 
+
+function generateRandomArray() {
+    const arrayRan = [];
+    for(let i = 0; i <= 9; i++) {
+        let score = Math.floor(Math.random() * 100) +1;
+        arrayRan.push(score);
+        
+        }
+    return arrayRan;    
+}
+function sumEvenNumbers (array)  {
+    let sum = 0;
+    for(let i=0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            sum += array[i];
+        }
+    }
+    return sum;
+}
+
 const array = generateRandomArray();
 console.log(array);
+
+const evenSum = sumEvenNumbers(array);
+console.log("Sum of even numbers:", evenSum);
 
 */
-
-/* Excerise 3 Not done */
-function generateRandomArray() {
-    const arrayRan = [];
-    for(let i = 2; i <= 20; i+=2) {
-        let score = Math.floor(Math.random() * 100) +1;
-    
-        arrayRan[i] = score;
-        }
-    return arrayRan;    
-}
-
-const array = generateRandomArray();
-console.log(array);
-
-
 
 
 /* Extra */
