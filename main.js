@@ -42,11 +42,11 @@ console.log(array);
 
 
 
-/* Excerise 3 
+/* Excerise 3
 
-function generateRandomArray() {
+function generateRandomArray(length) {
     const arrayRan = [];
-    for(let i = 0; i <= 9; i++) {
+    for(let i = 0; i <= length; i++) {
         let score = Math.floor(Math.random() * 100) +1;
         arrayRan.push(score);
         
@@ -63,13 +63,13 @@ function sumEvenNumbers (array)  {
     return sum;
 }
 
-const array = generateRandomArray();
+const array = generateRandomArray(10);
 console.log(array);
 
 const evenSum = sumEvenNumbers(array);
 console.log("Sum of even numbers:", evenSum);
 
-*/
+ */
 
 
 /* Extra */
